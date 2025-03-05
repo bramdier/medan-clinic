@@ -56,8 +56,8 @@
                                             <input type="number" id="noSSocial" name="noSSocial"
                                                 class=" @error('noSSocial') error-border @enderror model-field__input form-control"
                                                 value="{{ old('noSSocial') }}" placeholder=" " required />
-                                            <label for="noSSocial" class="model-field__label">social security
-                                                number</label>
+                                            <label for="noSSocial" class="model-field__label">nik
+                                                </label>
                                             @error('noSSocial')
                                                 <div class="error">{{ $message }}</div>
                                             @enderror

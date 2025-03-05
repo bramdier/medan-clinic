@@ -49,7 +49,7 @@
                                     <div class="model-field">
                                         <div class="model-field__control">
                                             <textarea id="motivation" name="motivation" type="text" class=" form-field__textarea form-control"
-                                                placeholder="motivation" required></textarea>
+                                                placeholder="keluhan" required></textarea>
                                             {{-- <label for="motivation" class="model-field__label">motivation</label> --}}
                                             <div class="model-field__bar"></div>
                                         </div>

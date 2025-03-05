@@ -53,11 +53,7 @@
                         </div>
                     @enderror
                 </div>
-                @php
-                    $f = $user->role->value == 1;
-                    var_dump($f);
-                    // echo '<h1>' . $user->role->value == 2 ? 'fuck' : 'sex' . '</h1>';
-                @endphp
+                
                 <div class="form-group">
                     <label for="role">User role</label>
                     <select id="role" name="role" class=" @error('role') error-border @enderror form-control"

@@ -266,18 +266,18 @@
                                 value="{{ old('phone', $patient->phone) }}" hidden />
 
                             <div class="form-group">
-                                <label for="diseases">Diseases</label>
+                                <label for="diseases">Gejala Penyakit</label>
                                 <input id="diseases" name="diseases" type="text" class=" form-control   "
-                                    placeholder="Keluhan" value="{{ old('diseases', $patient->diseases) }}" />
+                                    placeholder="Penyakit" value="{{ old('diseases', $patient->diseases) }}" />
                             </div>
                             <div class="form-group">
-                                <label for="allergies">Allergies</label>
+                                <label for="allergies">Alergi</label>
                                 <input id="allergies" name="allergies" type="text" class=" form-control "
                                     placeholder="Alergi"
                                     value="{{ old('allergies', $patient->allergies) }}" />
                             </div>
                             <div class="form-group">
-                                <label for="antecedents">Antecedents</label>
+                                <label for="antecedents">Riwayat Penyakit</label>
                                 <textarea name="antecedents" id="antecedents" cols="30" rows="5" class="form-control">{{ old('antecedents', $patient->antecedents) }}</textarea>
                             </div>
 
@@ -415,7 +415,8 @@
                                                     @php
                                                         $arr = explode('/', $scan->scan_path);
                                                         $name = end($arr);
-                                                        $path = '/images/' . $name;
+                                                        $filenameWithExt = basename($name);
+                                                        $path = '/images/' . $filenameWithExt;
                                                     @endphp
                                                     <a href={{ $path }}
                                                         onclick="window.open(this.href, '_blank', 'left=50%,top=50%,width=500,height=500,toolbar=1,resizable=1'); return false;"

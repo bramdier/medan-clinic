@@ -28,7 +28,7 @@
     <a href="#" class="brand-link">
         <img src="{{ asset('img/appointments1.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
             style="max-height: 38px;opacity: .8">
-        <span class="brand-text font-weight-light"><b>Clinique</b>Tlemcen</p></span>
+        <span class="brand-text font-weight-light"><b>Klinik</b>Medan</p></span>
     </a>
     <!-- Sidebar -->
     <div class="sidebar">
